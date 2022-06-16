@@ -2,10 +2,21 @@ git config --global/local user.name ....... user.name ""
 git config --global/local user.email ....... user.email ""
 
 git init / git status / git add
+git commit -m ""
 
 git rm --chached filename.extention
+git restore --staged filename.extention
+
+git reset --soft HEAD^ {can use ^^^ to num of wanted items to unstage and ~}
+git reset --hard HEAD^ {becarefull this will remove file}
+--hard {delete commit if creatin then delete file if update then delete update}
 
 git remote add origin given link to repo from github
 git remote
+git log / git log --oneline
 
+branch -M main/master
+
+git push origin master/main
+git pull origin master/main
 echo content>filename.extention
